@@ -1,0 +1,12 @@
+.auslandsangebote-text-block{
+display: inline-block;
+vertical-align: middle;
+}
+
+.auslandsangebote-text-left-image-right img{
+    margin-top:80px;
+}
+
+.auslandsangebote-image-left-text-right img{
+    margin-top:80px;
+}
