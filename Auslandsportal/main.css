@@ -12,6 +12,13 @@ html {
 
 /* Header Settings*/
 
+.header-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
 header{
     padding-bottom: 10px;
 }
@@ -74,4 +81,27 @@ header{
     max-height: 100%;  
     max-width: 100%;
  
+}
+
+.container-buttons{
+    align-self:center;
+}
+
+@media(min-width:640px){
+    .btn{
+        font-size: 1.2rem !important;
+        margin-right: 10px;
+    }
+
+    #dhbwLogo {
+        height:6vh;
+        
+     }
+}
+
+@media(min-width:1024px){
+    #dhbwLogo {
+        height:8vh;
+    }
+        
 }
