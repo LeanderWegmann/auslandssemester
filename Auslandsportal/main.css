@@ -89,6 +89,27 @@ header{
     align-self:center;
 }
 
+/* Erfahrungsberichte*/
+
+.erfahrungsBerichte-grid-container{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.erfahrungsBerichte-image-container{
+    position: relative;
+    text-align: center;
+    color: white;
+   opacity: 0.7;
+}
+
+.erfahrungsBerichte-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media(min-width:640px){
     .btn{
         font-size: 1.2rem !important;
@@ -103,12 +124,24 @@ header{
     .auslandsangebote-text-block{
         font-size: 1.2rem;
     }
+    .erfahrungsBerichte-container{
+        margin: 0 auto;
+        max-width:1200px;
+    }
+
+    .erfahrungsBerichte-grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+ 
+      
+    }
 }
 
 @media(min-width:1024px){
     .auslandsangebote-container{
         margin: 0 auto;
-        width:1200px
+        max-width:1200px;
     }
     
     #dhbwLogo {
