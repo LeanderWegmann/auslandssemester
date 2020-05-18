@@ -38,18 +38,20 @@ header{
 
 
 /*Auslandsangebote*/
+
+
 .grid-container{
     display: grid;
     
 }
 .auslandsangebote-image-left-text-right{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr ;
 }
 
 .auslandsangebote-text-left-image-right{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .mobile-order-swap{
@@ -97,11 +99,57 @@ header{
         height:6vh;
         
      }
+
+    .auslandsangebote-text-block{
+        font-size: 1.2rem;
+    }
 }
 
 @media(min-width:1024px){
+    .auslandsangebote-container{
+        margin: 0 auto;
+        width:1200px
+    }
+    
     #dhbwLogo {
         height:8vh;
     }
+
+    .auslandsangebote-heading{
+        font-size: 2.5rem;
+    }
+    .grid-container{
+        display: grid;
+        
+    }
+    .auslandsangebote-image-left-text-right{
+        display: grid;
+        grid-gap: 24px;
+        margin-bottom:100px ;
+       
+    }
+    .auslandsangebote-image-left-text-right img{
+        grid-row:1/1;
+    }
+    .auslandsangebote-image-left-text-right .auslandsangebote-text-block{
+        grid-row:1/2;
+    }
+
+    
+    .auslandsangebote-text-left-image-right{
+        display: grid;
+       grid-gap:24px;
+       margin-bottom: 100px;
+    }
+    .auslandsangebote-text-left-image-right img{
+       
+       grid-row: 2/1;
+    }
+
+    .auslandsangebote-text-left-image-right .auslandsangebote-text-block{
+       
+        grid-row:1/2;
+     }
+    
         
 }
