@@ -101,7 +101,13 @@ header{
     position: relative;
     text-align: center;
     color: white;
-   opacity: 0.7;
+    opacity: 0.7;
+}
+
+.erfahrungsBerichte-image-container:hover{
+    transform: scale(1.05);
+    filter: grayscale(70%); 
+
 }
 
 .erfahrungsBerichte-text-container{
